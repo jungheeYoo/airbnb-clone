@@ -3,7 +3,6 @@
   width: 80%;
   max-width: 1920px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 /* header */
@@ -167,4 +166,42 @@ header .gnb .search .searchUl li span {
   background-color: inherit;
   font-weight: bold;
   border-radius: 14px;
+}
+
+/* mainBanner */
+.mainBanner {
+  height: 600px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  background-image: url('https://news.airbnb.com/wp-content/uploads/sites/4/2024/01/The-Machinery-Shed.-Photo-courtesy-of-Airbnb.jpeg?resize=1100%2C725');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mainBanner .content {
+  color: white;
+  text-align: center;
+}
+.mainBanner .content p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.mainBanner .content button {
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 24px;
+}
+.mainBanner .content button span {
+  background: linear-gradient(#e66465, #9198e5);
+  -webkit-background-clip: -webkit-text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
