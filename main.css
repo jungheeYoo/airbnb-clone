@@ -3,6 +3,7 @@
   width: 80%;
   max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .black-bg {
@@ -250,4 +251,59 @@ header .gnb .search .searchUl li span {
 }
 .city .card figcaption span {
   font-size: 1rem;
+}
+
+/* expression */
+.expression {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+  grid-template-areas:
+    'heading heading'
+    'div1 div2';
+}
+@media screen and (max-width: 576px) {
+  .expression {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    grid-template-areas:
+      'heading'
+      'div1'
+      'div2';
+  }
+}
+
+.expression .photoDiv {
+  height: calc(700px - calc(60px * 2));
+  padding: 60px;
+  border-radius: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.expression .photoDiv:nth-last-of-type(1) {
+  background-image: url('https://news.airbnb.com/wp-content/uploads/sites/4/2022/12/01-Hobbiton-Airbnb-The-Shire-Credit-Larnie-Nicolson.jpg?resize=768%2C512&zoom=2');
+}
+.expression .photoDiv:nth-last-of-type(2) {
+  background-image: url('https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/01-DDP-Airbnb-Enhypen-Credit-Chun-Youngsang.jpg?resize=768%2C512&zoom=2');
+}
+.expression .photoDiv p {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+.expression .photoDiv button {
+  color: black;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+  padding: 15px 23px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.expression .photoDiv button:hover {
+  background-color: lightgray;
 }
